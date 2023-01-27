@@ -25,7 +25,7 @@
     <p style="text-align:center">Book a call slot and our representative will call you within 1 hour of the selected time</p><hr style="border-width:4px;">
     
     <form action="#" onsubmit="registerUser(event)">
-      <div class="mb-2 mt-2">
+      <div class="mb-2 mt-2" id="list of items">
         <label class="form-label">Name of the patient:</label><br>
         <input type="text" class="form-control" id="name" placeholder="Enter name of the patient" required><br>
         <label class="form-label">Email of the patient:</label><br>
@@ -43,17 +43,6 @@
     </form>
   </div>
 
-  <script>
-      function registerUser(event){
-            event.preventDefault();
-            console.log(event);
-            console.log(document.getElementById('name').value);
-            console.log(document.getElementById('email').value);
-            console.log(document.getElementById('phone').value);
-            console.log(document.getElementById('date').value);
-            console.log(document.getElementById('time').value);
-      }
-
-  </script>
+  <script src="dom.js"></script>
 </body>
 </html>
